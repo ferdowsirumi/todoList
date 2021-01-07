@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap|Roboto|Helvetica Neue|Arial,sans-serif"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main" id="home">
+        <div class="container">
+            <img src="image/mountain.jpeg" width="1000" height="300">
+            <div class="topleft">
+                <img src="image/logo2.png" class="image">
+            </div>
+            <div class="bottomleft">
+                <h1>Your
+                    <br>Things</h1>
+            </div>
+            <div class="bottomleft1">
+                <div id="dateSetUp"></div>
+            </div>
+            <div class="overlap">
+                <div class="topright">
+                    <div id="timeSetUp">
+                    </div>
+                </div>
+                <div>
+                    <button class="btn1" onclick="showFormPart()">
+                        Add New Task
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- text part -->
+        <div id="text">
+            <ul id="texts">
+                <li>
+                    <span class="close">&times;</span>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- text part -->
+    </div>
+    <!-- Form part-->
+    <div id="formPart">
+        <div class="c2">
+            <div class="signin">
+                <h1 class="signup1">New Task</h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="input">
+                    <input name="txtTaskName" id="txtTaskName" required type="text" placeholder="Task" class="username" />
+                    <input name="txtDetails" id="txtDetails" required type="text" placeholder="Details" class="username" />
+                    <input name="txtDate" id="txtDate" type="date" name="txtDate" class="username">
+                    <button class="btn" onclick="showHideText()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Form part -->
+    <script src="todo.js"></script>
+</body>
+</html>
